@@ -7,6 +7,6 @@
   text-decoration: none;
   @extend %transition;
   @include media-hover {
-    color: $color-hover-nav;
+    color: $color-hover;
   }
 }

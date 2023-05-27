@@ -26,7 +26,7 @@
     height: 3px;
   }
   @include media-hover {
-    color: $color-hover-nav;
+    color: $color-hover;
     &::after {
       width: 100%;
     }
