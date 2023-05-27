@@ -1,0 +1,27 @@
+.about__wrapper {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  >*{
+    flex-basis: 50%;
+  }
+}
+
+.about__img-block {
+  width: 100%;
+}
+
+.about__title {
+  @include font($font-family: Poppins, $font-weight: 700, $font-size: 3rem);
+}
+
+.about__text {
+  text-align: justify;
+  @include font(
+    $font-family: Mulish,
+    $font-weight: 400,
+    $font-size: 2rem,
+    $line-height: 2.6rem
+  );
+}
