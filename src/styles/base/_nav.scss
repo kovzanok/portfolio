@@ -10,10 +10,9 @@
 }
 
 .nav__link {
-  text-decoration: none;
+  @extend %link;
   position: relative;
   color: $color-dark;
-  @extend %transition;
   &::after {
     @extend %transition;
     position: absolute;
