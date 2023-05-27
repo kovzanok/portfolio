@@ -1,0 +1,56 @@
+.tech {
+  display: flex;
+}
+
+.tech__text {
+  display: inline-block;
+  @include font(
+    $font-family: Mulish,
+    $font-weight: 400,
+    $font-size: 2rem,
+    $line-height: 2.6rem
+  );
+  border-right: 2px solid $color-dark;
+  padding-right: 10px;
+  border-radius: 2px;
+}
+
+.tech__list {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.tech__item {
+  width: 40px;
+  height: 40px;
+}
+
+.html5 {
+  background: center / contain no-repeat url("src/icons/html5.svg");
+}
+
+.css3 {
+  background: center / contain no-repeat url("src/icons/css3.svg");
+}
+
+.sass {
+  background: center / contain no-repeat url("src/icons/sass.svg");
+}
+
+.js {
+  background: center / contain no-repeat url("src/icons/js.svg");
+}
+
+.ts {
+  background: center / contain no-repeat url("src/icons/typescript.svg");
+}
+
+.react {
+  background: center / contain no-repeat url("src/icons/react.svg");
+}
+
+.webpack {
+  background: center / contain no-repeat url("src/icons/webpack.svg");
+}
