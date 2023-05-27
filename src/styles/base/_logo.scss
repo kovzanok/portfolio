@@ -1,0 +1,12 @@
+.logo {
+  @include font($font-family: Poppins, $font-weight: 700, $font-size: 2.5rem);
+}
+
+.logo__link {
+  color: $color-dark;
+  text-decoration: none;
+  @extend %transition;
+  @include media-hover {
+    color: $color-hover-nav;
+  }
+}
