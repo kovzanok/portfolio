@@ -15,5 +15,6 @@
 
 .footer__copyright {
   text-align: right;
+  color: $color-light;
   @include font($font-family: Poppins, $font-weight: 400, $font-size: 1.5rem);
 }
