@@ -1,0 +1,29 @@
+.socials__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  flex-direction: row;
+}
+
+.socials__link {
+  @extend %link;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  @include media-hover {
+    transform: scale(1.2);
+  }
+}
+
+.linkedin-link {
+  background: center / contain no-repeat url("src/icons/linkedin.png");
+}
+
+.github-link {
+  background: center / contain no-repeat url("src/icons/github.svg");
+}
+
+.mail-link {
+  background: center / contain no-repeat url("src/icons/mail.png");
+}
