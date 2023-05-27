@@ -1,0 +1,100 @@
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-light;
+  column-gap: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  padding: 10px;
+  > * {
+    flex-basis: 50%;
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  &:nth-child(2) {
+    .project__image {
+      transition-duration: 3s;
+      @include media-hover {
+        transform: translateY(-20%);
+      }
+    }
+  }
+  &:nth-child(3){
+    .project__image {
+      transition-duration: 5s;
+      @include media-hover {
+        transform: translateY(-84%);
+      }
+    }
+  }
+  &:nth-child(4) {
+    .project__image {
+      transition-duration: 5s;
+      @include media-hover {
+        transform: translateY(-78%);
+      }
+    }
+  }
+}
+
+.project__image-block {
+  overflow: hidden;
+  height: 250px;
+  border-radius: 15px;
+  border: 1px solid $color-dark;
+}
+
+.project__image {
+  display: inline-block;
+  border-radius: 15px;
+  min-height: 250px;
+  width: 100%;
+  @extend %transition;
+  @include media-hover {
+    transform: scale(1.01);
+  }
+}
+
+.project__title {
+  text-align: center;
+  margin: 0;
+  @include font($font-family: Poppins, $font-weight: 700, $font-size: 2.5rem);
+}
+
+.project__text {
+  text-align: center;
+  @include font($font-family: Mulish, $font-weight: 400, $font-size: 2rem);
+}
+
+.project__techs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.project__tech {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  @include font($font-family: Mulish, $font-weight: 400, $font-size: 1.7rem);
+}
+
+.project__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20%;
+  margin-top: 20px;
+  @include font($font-family: Mulish, $font-weight: 400, $font-size: 2.5rem);
+}
+
+.project__link {
+  @extend %transition;
+  @include media-hover {
+    color: $color-download;
+  }
+}
