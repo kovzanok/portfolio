@@ -132,15 +132,9 @@ body {
 a {
     // 1
     
-    background: transparent;
+    background: transparent;    
 
     // 2
-
-    &:focus {
-        outline: thin dotted;
-    }
-
-    // 3
 
     &:hover,
     &:active {
