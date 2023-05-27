@@ -1,0 +1,17 @@
+.projects {
+  background-color: $color-light-secondary;
+}
+
+.projects__wrapper {
+  padding: 25px 0;
+}
+
+.projects__title {
+  @include font($font-family: Poppins, $font-weight: 700, $font-size: 3rem);
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
