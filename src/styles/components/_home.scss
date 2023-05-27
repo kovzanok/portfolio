@@ -1,0 +1,78 @@
+.home {
+  background-color: $color-light-secondary;
+}
+
+.home__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+  justify-items: center;
+}
+
+.home__title {
+  @include font($font-family: Poppins, $font-weight: 700, $font-size: 5rem);
+}
+
+.home__text {
+  @include font(
+    $font-family: Mulish,
+    $font-weight: 400,
+    $font-size: 2rem,
+    $line-height: 2.6rem
+  );
+}
+
+.home__photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+  border: 2px solid $color-dark;
+}
+
+.home__links {
+  display: flex;
+  column-gap: 30px;
+}
+
+.home__download-link {
+  display: inline-block;
+  @extend %link;
+  @include font(
+    $font-family: Mulish,
+    $font-weight: 400,
+    $font-size: 2rem,
+    $line-height: 2.6rem
+  );
+  padding: 5px 10px;
+  color: $color-light;
+  background-color: $color-download;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  @include media-hover {
+    transform: scale(1.1);
+  }
+}
+
+.home__projects-link {
+  display: inline-block;
+  @extend %link;
+  @include font(
+    $font-family: Mulish,
+    $font-weight: 400,
+    $font-size: 2rem,
+    $line-height: 2.6rem
+  );
+  padding: 5px 10px;
+  color: $color-download;
+  background-color: $color-light;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  @include media-hover {
+    transform: scale(1.1);
+  }
+}
+
+.home__tech {
+  justify-self: start;
+  grid-column: 1 / 3;
+}
