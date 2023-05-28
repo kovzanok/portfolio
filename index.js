@@ -14,7 +14,7 @@ const handleMenuClick = (e) => {
     target.classList.contains("header__nav") ||
     target.classList.contains("nav__link")
   ) {
-    document.documentElement.classList.toggle("remove");
+    document.documentElement.classList.remove("lock");
     headerNav.classList.remove("nav_active");
   }
 };
