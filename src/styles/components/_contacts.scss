@@ -1,5 +1,8 @@
 .contacts__wrapper {
   padding: 100px 0;
+  @include media-content {
+    padding: 50px 0;
+  }
 }
 
 .contacts__title {
@@ -18,7 +21,15 @@
 
 .contacts__list {
   display: flex;
-  column-gap: 5%;
+  column-gap: 20px;
+  @include media-pre-tablet {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+  @include media-pre-mobile {
+    justify-content: flex-start;
+  }
 }
 
 .contacts__item {
@@ -32,6 +43,12 @@
     i {
       font-size: 3rem;
     }
+  }
+  @include media-pre-tablet {
+    width: 50%;
+  }
+  @include media-pre-mobile {
+    width: 100%;
   }
 }
 
@@ -52,4 +69,7 @@
     $font-size: 2rem,
     $line-height: 2.6rem
   );
+  @include media-pre-mobile {
+    font-size: 1.5rem;
+  }
 }
