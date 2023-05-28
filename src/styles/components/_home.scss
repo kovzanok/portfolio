@@ -89,12 +89,11 @@
     $line-height: 2.6rem
   );
   padding: 5px 10px;
-  color: $color-light;
+  color: $color-light!important;
   background-color: $color-download;
   border: 1px solid currentColor;
   border-radius: 5px;
   @include media-hover {
-    color: $color-light;
     transform: scale(1.1);
   }
 }

@@ -1,13 +1,33 @@
 .navigation {
   width: 100%;
-  
+  @extend %transition;
+  @include media-tablet {
+    transform: translate(100%);
+    width: 320px;
+    height: 100%;
+    background-color: $color-light-secondary;
+  }
 }
+
 
 .nav__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   @include font($font-family: Poppins, $font-weight: 700, $font-size: 2rem);
+  @include media-tablet {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    @include font(
+      $font-family: Poppins,
+      $font-weight: 400,
+      $font-size: 4rem,
+      $line-height: 4.4rem
+    );
+  }
 }
 
 .nav__link {
