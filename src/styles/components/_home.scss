@@ -5,7 +5,7 @@
 .home__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 30px 0;
+  padding: 190px 0;
   justify-items: center;
 }
 
@@ -49,6 +49,7 @@
   border: 1px solid currentColor;
   border-radius: 5px;
   @include media-hover {
+    color: $color-light;
     transform: scale(1.1);
   }
 }
