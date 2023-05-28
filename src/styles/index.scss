@@ -1,0 +1,21 @@
+@import './abstract/constants';
+@import './abstract/placeholders';
+@import './abstract/mixins';
+@import './abstract/normalize';
+
+@import './base/base';
+@import './base/logo';
+@import './base/nav';
+@import './base/tech';
+@import './base/project';
+@import './base/carousel-custom';
+@import './base/socials';
+
+@import './components/home';
+@import './components/about';
+@import './components/projects';
+@import './components/contacts';
+
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/container';
