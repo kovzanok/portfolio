@@ -4,10 +4,16 @@
 
 .projects__wrapper {
   padding: 60px 0;
+  @include media-content {
+    padding: 50px 0;
+  }
 }
 
 .projects__title {
   @include font($font-family: Poppins, $font-weight: 700, $font-size: 3rem);
+  @include media-pre-mobile {
+    text-align: center;
+  }
 }
 
 .project-list {
