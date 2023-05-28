@@ -6,6 +6,15 @@
   line-height: $line-height;
 }
 
+@mixin hamburger-line($color) {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  display: inline-block;
+  background-color: $color;
+}
+
 @mixin media-hover {
   @media (hover: hover) {
     &:hover {
