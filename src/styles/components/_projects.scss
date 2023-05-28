@@ -3,7 +3,7 @@
 }
 
 .projects__wrapper {
-  padding: 25px 0;
+  padding: 60px 0;
 }
 
 .projects__title {
@@ -13,5 +13,6 @@
 .project-list {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 30px;
+  margin-bottom: 60px;
 }
