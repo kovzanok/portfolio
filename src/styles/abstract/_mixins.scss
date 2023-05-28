@@ -22,3 +22,33 @@
     }
   }
 }
+
+@mixin media-content {
+  @media (max-width: $content-width) {
+    @content;
+  }
+}
+
+@mixin media-pre-tablet {
+  @media (max-width: $pre-tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin post-media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-pre-mobile {
+  @media (max-width: $pre-mobile-width) {
+    @content;
+  }
+}
