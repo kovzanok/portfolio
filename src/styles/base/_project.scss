@@ -24,7 +24,7 @@
       }
     }
   }
-  &:nth-child(3) {
+  &:nth-child(4) {
     .project__image {
       transition-duration: 5s;
       @include media-hover {
@@ -32,7 +32,7 @@
       }
     }
   }
-  &:nth-child(4) {
+  &:nth-child(5) {
     .project__image {
       transition-duration: 5s;
       @include media-hover {
