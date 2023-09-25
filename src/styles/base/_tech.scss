@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
-  @include media-pre-mobile {
+  @include media-tablet {
     padding: 0;
     justify-content: center;
     row-gap: 10px;
@@ -75,6 +75,26 @@
   background: center / contain no-repeat url("src/icons/redux.svg");
 }
 
+.node {
+  background: center / contain no-repeat url("src/icons/node.svg");
+}
+
+.mongo {
+  background: center / contain no-repeat url("src/icons/mongo.svg");
+}
+
 .webpack {
   background: center / contain no-repeat url("src/icons/webpack.svg");
+}
+
+.vite {
+  background: center / contain no-repeat url("src/icons/vite.svg");
+}
+
+.eslint {
+  background: center / contain no-repeat url("src/icons/eslint.svg");
+}
+
+.vitest {
+  background: center / contain no-repeat url("src/icons/vitest.svg");
 }

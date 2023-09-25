@@ -7,6 +7,7 @@
   grid-template-columns: 1fr 1fr;
   padding: 190px 0;
   justify-items: center;
+  row-gap: 30px;
   @include media-content {
     padding: 90px 0;
     row-gap: 50px;
@@ -118,7 +119,7 @@
 }
 
 .home__tech {
-  justify-self: start;
+  justify-self: center;
   grid-column: 1 / 3;
   
 }
